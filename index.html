@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Saiprashanth — Software Developer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230e1a33%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-size=%2730%27 font-family=%27Georgia,serif%27 font-weight=%27700%27 fill=%27%23c4a574%27 text-anchor=%27middle%27%3ETS%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0e1a33">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="T Saiprashanth — Software Developer">
+    <meta property="og:description" content="Computer Science student building full-stack web applications with React, Node.js and MongoDB.">
+    <script>try{var t=localStorage.getItem('theme');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+    <meta name="description" content="Portfolio of T Saiprashanth, a Computer Science student building full-stack web applications with React, Node.js and MongoDB.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#main" class="brand">T Saiprashanth</a>
+            <nav class="nav" id="nav" aria-label="Main">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <a href="Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+            </nav>
+            <button class="theme-btn" id="themeBtn" aria-label="Switch to dark mode"><i class="fas fa-moon"></i></button>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Chennai, India</p>
+                    <h1 id="heroName">T Saiprashanth</h1>
+                    <p class="role">Computer Science student &amp; full-stack developer</p>
+                    <p class="lead">
+                        I build web applications with React, Node.js and MongoDB. Lately that has meant a hospital
+                        records platform, a pharmacy system, and a lot of time with the Gemini API.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-dark">See projects</a>
+                        <a href="Resume.pdf" class="btn btn-light" target="_blank" rel="noopener">Download resume</a>
+                    </div>
+                </div>
+                <div class="orbit" id="orbit" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="wrap two-col">
+                <div class="section-head"><p class="section-label">About</p><h2 class="section-title">A little about me</h2></div>
+                <div class="prose">
+                    <p>
+                        I'm a B.E. Computer Science student at Easwari Engineering College
+                        with a CGPA of 8.58. I like problems that sit between a clean interface and a messy
+                        database, which is where most real software ends up.
+                    </p>
+                    <p>
+                        My strongest ground is Java, JavaScript/TypeScript and SQL, with a solid footing in data
+                        structures and object-oriented design. I also work with MuleSoft and DataWeave for API-led
+                        integration, and hold Salesforce and Copado certifications in that area.
+                    </p>
+                    <p>
+                        I learn quickly, work well in a team, and I'm looking for opportunities where I can
+                        contribute to real software while continuing to grow as a developer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="wrap">
+                <div class="section-head"><p class="section-label">Projects</p><h2 class="section-title">Things I've built</h2></div>
+                <div class="projects-filter">
+                    <button class="project-filter-btn active" data-filter="all">All Projects</button>
+                    <button class="project-filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="project-filter-btn" data-filter="web">Web App</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-content">
+                            <h3>CareWeave</h3>
+                            <p class="project-sub">Hackathon project · 2026</p>
+                            <p>A shared patient record system linking hospital reception, laboratory and doctor modules. AI lab-report scanning needs a second-person approval before results are saved, and doctors get allergy and duplicate-drug warnings.</p>
+                            <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">React</span><span class="project-tag">Tailwind CSS</span><span class="project-tag">Node.js</span><span class="project-tag">Express</span><span class="project-tag">MongoDB Atlas</span><span class="project-tag">Exasol</span><span class="project-tag">Gemini API</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/saiprashanth2410/Care-weave" class="btn" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://careweave-ten.vercel.app" class="btn btn-ghost" target="_blank" rel="noopener">Live demo ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-content">
+                            <h3>MediTrack OS</h3>
+                            <p class="project-sub">Pharmacy management system · 2026</p>
+                            <p>Covers medicines, batches, suppliers, prescriptions and billing, with expiry management, analytics and reports. Includes barcode scanning and AI-based medicine category detection.</p>
+                            <div class="project-tags"><span class="project-tag">React.js</span><span class="project-tag">Tailwind CSS</span><span class="project-tag">Node.js</span><span class="project-tag">Express.js</span><span class="project-tag">MongoDB</span><span class="project-tag">Firebase</span><span class="project-tag">Gemini API</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/saiprashanth2410/MEDIOS" class="btn" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://meditrack-three-delta.vercel.app" class="btn btn-ghost" target="_blank" rel="noopener">Live demo ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-content">
+                            <h3>Smart Wardrobe &amp; Laundry Assistant</h3>
+                            <p class="project-sub">Personal project · 2025</p>
+                            <p>Organises a wardrobe and recommends outfits, tracks how often clothes are worn, and sends laundry reminders through a clean, responsive interface.</p>
+                            <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span><span class="project-tag">Python</span></div>
+                            <div class="project-links">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="more">
+                    More code on <a href="https://github.com/saiprashanth2410" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="wrap">
+                <div class="section-head"><p class="section-label">Skills</p><h2 class="section-title">What I work with</h2></div>
+                <dl class="skills">
+                    <div><dt>Languages</dt><dd>Java, Python, C, JavaScript, TypeScript, SQL</dd></div>
+                    <div><dt>Frontend</dt><dd>HTML, CSS, React.js, Tailwind CSS, Responsive Web Design, UI/UX Design</dd></div>
+                    <div><dt>Backend</dt><dd>Node.js, Express.js, REST APIs</dd></div>
+                    <div><dt>Integration</dt><dd>MuleSoft Anypoint Platform, DataWeave, API-led Connectivity</dd></div>
+                    <div><dt>Databases</dt><dd>MySQL, MongoDB, Firebase, Exasol</dd></div>
+                    <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Postman, Anypoint Studio</dd></div>
+                    <div><dt>Soft skills</dt><dd>Communication, Teamwork, Problem Solving, Time Management, Adaptability, Leadership</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <div class="wrap">
+                <div class="section-head"><p class="section-label">Certifications</p><h2 class="section-title">Credentials</h2></div>
+                <div class="certifications-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="integration">Integration</button>
+                    <button class="filter-btn" data-filter="web">Web &amp; WEB3</button>
+                </div>
+                <div class="certifications-grid">
+                    <div class="certification-card" data-cert="certs/aws-cloud-practitioner.jpg" data-title="AWS Certified Cloud Practitioner" role="button" tabindex="0" aria-label="View certificate: AWS Certified Cloud Practitioner" data-category="cloud">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img wide aws"><img src="aws-certified.png" alt="AWS Certified"></div>
+                            <div class="cert-header"><h3>AWS Certified Cloud Practitioner</h3><span class="cert-date">2026</span></div>
+                            <div class="cert-issuer">Amazon Web Services</div>
+                            <p class="cert-meta">Issued Nov 3, 2026 · Valid until Nov 3, 2029<br><span class="cert-id">ID 53375437bd2d4058b65cd1aba1ecfa33</span></p>
+                            <a class="cert-verify" href="https://aws.amazon.com/verification" target="_blank" rel="noopener">Verify credential ↗</a>
+                        </div>
+                    </div>
+                    <div class="certification-card" data-cert="certs/salesforce-mulesoft.jpg" data-title="Salesforce Certified MuleSoft Developer" role="button" tabindex="0" aria-label="View certificate: Salesforce Certified MuleSoft Developer" data-category="integration">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img flush"><img src="salesforce-badge.png" alt="Salesforce Certified MuleSoft Developer badge"></div>
+                            <div class="cert-header"><h3>Salesforce Certified MuleSoft Developer</h3><span class="cert-date">2026</span></div>
+                            <div class="cert-issuer">Salesforce</div>
+                            <p class="cert-meta">Issued Aug 14, 2026 · ID 8026815</p>
+                            <a class="cert-verify" href="https://sforce.co/verifycerts" target="_blank" rel="noopener">Verify credential ↗</a>
+                        </div>
+                    </div>
+                    <div class="certification-card" data-cert="certs/copado-data-360.jpg" data-title="Copado Certified Copado Data 360" role="button" tabindex="0" aria-label="View certificate: Copado Certified Copado Data 360" data-category="integration">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img"><img src="copado-badge.jpg" alt="Copado Certified badge"></div>
+                            <div class="cert-header"><h3>Copado Certified Copado Data 360</h3><span class="cert-date">2026</span></div>
+                            <div class="cert-issuer">Copado</div>
+                            <p class="cert-meta">Issued Oct 20, 2026 · ID 086197</p>
+                            <a class="cert-verify" href="https://success.copado.com/s/validate-credentials?language=en_US" target="_blank" rel="noopener">Verify credential ↗</a>
+                        </div>
+                    </div>
+                    <div class="certification-card" data-cert="certs/copado-agentia-advanced.jpg" data-title="Copado Agentia Advanced" role="button" tabindex="0" aria-label="View certificate: Copado Agentia Advanced" data-category="integration">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img"><img src="copado-badge.jpg" alt="Copado Certified badge"></div>
+                            <div class="cert-header"><h3>Copado Agentia Advanced</h3><span class="cert-date">2026</span></div>
+                            <div class="cert-issuer">Copado</div>
+                            <p class="cert-meta">Issued Oct 20, 2026 · ID 086194</p>
+                            <a class="cert-verify" href="https://success.copado.com/s/validate-credentials?language=en_US" target="_blank" rel="noopener">Verify credential ↗</a>
+                        </div>
+                    </div>
+                    <div class="certification-card" data-cert="certs/greens-full-stack.jpg" data-title="Full Stack Development, Greens Technology" role="button" tabindex="0" aria-label="View certificate: Full Stack Development, Greens Technology" data-category="web">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img wide"><img src="greens-logo.jpg" alt="Greens Technology logo"></div>
+                            <div class="cert-header"><h3>Full Stack Development</h3><span class="cert-date">2026</span></div>
+                            <div class="cert-issuer">Greens Technology</div>
+                            <p class="cert-meta">Nov 2025 – Apr 2026 · Chennai</p>
+                        </div>
+                    </div>
+                    <div class="certification-card" data-cert="certs/web3-mentorship.jpg" data-title="WEB3 Mentorship Program, Launched Global" role="button" tabindex="0" aria-label="View certificate: WEB3 Mentorship Program, Launched Global" data-category="web">
+                        <div class="cert-content">
+                            <div class="cert-logo has-img flush"><img src="launched-global.png" alt="Launched Global logo"></div>
+                            <div class="cert-header"><h3>WEB3 Mentorship Program</h3><span class="cert-date">2025</span></div>
+                            <div class="cert-issuer">Launched Global × Kshitij</div>
+                            <p class="cert-meta">Certificate ID LEDCC6146</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="wrap">
+                <div class="section-head"><p class="section-label">Education</p><h2 class="section-title">Where I studied</h2></div>
+                <div class="edu-list">
+                    <div class="edu-card">
+                        <span class="edu-date">2024 — 2028</span>
+                        <div>
+                            <h3>Easwari Engineering College</h3>
+                            <p>Bachelor of Engineering · Computer Science and Engineering · CGPA 8.58 / 10</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <span class="edu-date">2023</span>
+                        <div>
+                            <h3>SRV Boys Higher Secondary School</h3>
+                            <p>Higher Secondary (HSC) · 89.2%</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <span class="edu-date">2021</span>
+                        <div>
+                            <h3>The Path Global Public School</h3>
+                            <p>Secondary (CBSE, Class 10) · 83.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="wrap two-col">
+                <div class="section-head"><p class="section-label">Contact</p><h2 class="section-title">Get in touch</h2></div>
+                <div>
+                    <p class="contact-lead">Open to internships and junior roles. Reach me on any of these.</p>
+                    <div class="contact-icons">
+                        <a href="https://wa.me/919384171086" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saiprashanth1510@gmail.com" target="_blank" rel="noopener" aria-label="Email" title="saiprashanth1510@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/saiprashanth-t-97624a328/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/saiprashanth2410" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="contact-name" aria-label="T Saiprashanth">T Saiprashanth</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-inner">
+                <span>© <span id="year">2026</span> T Saiprashanth · Chennai, India</span>
+                <a href="#main">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Certificate">
+        <div class="lb-inner">
+            <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+            <img id="lbImg" src="" alt="">
+            <p class="lb-caption" id="lbCaption"></p>
+        </div>
+    </div>
+
+    <button class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
