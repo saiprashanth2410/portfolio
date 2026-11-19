@@ -585,11 +585,6 @@ body.lb-open { overflow: hidden; }
     .section { padding: 60px 0; }
 }
 
-/* ---------- Big name in contact ---------- */
-.contact-name {
-    margin-top: 64px;
-    font-family: var(--serif); font-weight: 600; line-height: 0.95; letter-spacing: -0.02em;
-    font-size: clamp(44px, 10.5vw, 132px); white-space: nowrap;
-    background: linear-gradient(180deg, var(--text) 25%, var(--accent) 100%);
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-}
+.contact-phone { margin-top: 18px; font-family: var(--mono); font-size: 15px; letter-spacing: .02em; }
+.contact-phone a { color: var(--text-2); text-decoration: none; }
+.contact-phone a:hover { color: var(--accent); }
