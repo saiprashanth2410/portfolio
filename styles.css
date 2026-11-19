@@ -585,6 +585,9 @@ body.lb-open { overflow: hidden; }
     .section { padding: 60px 0; }
 }
 
-.contact-phone { margin-top: 18px; font-family: var(--mono); font-size: 15px; letter-spacing: .02em; }
-.contact-phone a { color: var(--text-2); text-decoration: none; }
-.contact-phone a:hover { color: var(--accent); }
+.contact-lines { margin-top: 26px; display: grid; gap: 10px; }
+.contact-lines li { display: flex; align-items: center; gap: 12px; font-size: 17px; }
+.contact-lines i { width: 20px; text-align: center; color: var(--accent); font-size: 16px; }
+.contact-lines .dash { color: var(--text-3); }
+.contact-lines a { color: var(--text); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; word-break: break-all; }
+.contact-lines a:hover { color: var(--accent); border-color: var(--accent); }
